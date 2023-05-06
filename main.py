@@ -28,5 +28,6 @@ class Game(commands.Bot):
 
 
 bot = Game()
-bot.run("MTA5NTg3MjYwNzA4MzA0NDg5NA.Gdz5o5.l4iWKniQaT95N4lzPRqyrSkyL-k8S50rXZDXxs")
-#bot.run("OTkzNTEzODQ1NTM4NzAxMzI0.GOpyih.MkQL1WV5ZYSSqLutEV_UJUn780aQOsdFpfKkTY")
+with open("token.txt") as file_object:
+    bot.run(file_object.readline())
+
